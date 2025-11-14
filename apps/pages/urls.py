@@ -1,9 +1,9 @@
 from django.urls import path
 
-from apps.pages.views import view_post
+from apps.pages.views import ViewPost
 
 app_name = 'pages'
 
 urlpatterns = [
-    path('',view_post,name='view_post'),
+    path('',ViewPost.as_view(),name='view_post'),
 ]
